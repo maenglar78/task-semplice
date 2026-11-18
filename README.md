@@ -4,7 +4,9 @@ Applicazione personale senza dipendenze, account, scadenze o assegnatari.
 
 ## Uso
 
-Apri `index.html` in un browser moderno (Edge, Chrome, Firefox o Safari).
+Apri **https://maenglar78.github.io/task-semplice/** in un browser moderno (Edge, Chrome, Firefox o Safari). Puoi anche aprire `index.html` direttamente sul PC.
+
+Il codice è pubblicato su https://github.com/maenglar78/task-semplice. GitHub Pages serve i file dalla radice del branch `main`; le modifiche pubblicate su quel branch vengono distribuite automaticamente. Il sito e il codice sono pubblici, ma le task non vengono caricate nel repository.
 
 - Scrivi una task e premi **Aggiungi** oppure Invio.
 - Spunta la task per spostarla in **Fatto**.
