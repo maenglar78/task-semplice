@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f9">
+  <title>Una cosa alla volta — Task</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✓</span> task semplice <span class="personal">PERSONALE</span></div>
+      <h1>Una cosa alla volta.</h1>
+      <p class="subtitle">Scrivi, fai, spunta. Il resto può aspettare.</p>
+    </header>
+    <form id="task-form" autocomplete="off">
+      <label class="sr-only" for="task-input">Cosa devi fare?</label>
+      <span class="input-icon" aria-hidden="true">+</span>
+      <input id="task-input" name="task" placeholder="Cosa devi fare?" maxlength="500" required>
+      <button class="add-button" type="submit">Aggiungi <span aria-hidden="true">↵</span></button>
+    </form>
+    <p id="notice" role="status" aria-live="polite"></p>
+    <div class="lists">
+      <section aria-labelledby="todo-heading">
+        <div class="section-heading"><h2 id="todo-heading"><span class="dot"></span>Da fare <span id="todo-count" class="count">0</span></h2><span class="section-hint">Un piccolo passo alla volta</span></div>
+        <ul id="todo-list" class="task-list"></ul>
+        <div id="todo-empty" class="empty"><span class="empty-icon" aria-hidden="true">☀</span><h3>La mente libera, per ora.</h3><p>Aggiungi la tua prima task qui sopra.</p></div>
+      </section>
+      <section class="done-section" aria-labelledby="done-heading">
+        <div class="section-heading"><h2 id="done-heading"><span class="dot done-dot"></span>Fatto <span id="done-count" class="count">0</span></h2><span class="section-hint">Ogni spunta conta</span></div>
+        <ul id="done-list" class="task-list"></ul>
+        <div id="done-empty" class="empty small"><p>Le task completate troveranno posto qui.</p></div>
+      </section>
+    </div>
+    <footer><span aria-hidden="true">▣</span> Solo le tue task. Salvate in questo browser.</footer>
+  </main>
+</body>
+</html>
